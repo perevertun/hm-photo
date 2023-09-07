@@ -1,0 +1,156 @@
+:root {
+--black: #121212;
+--dark-grey: #1D1D1D;
+--black-gradient: (180deg, #060707 0%, #1D1D1D 100%);
+--brown: #BEA69E;
+--white: #FFF;
+
+/* animation */
+--animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+font-family: 'DM Sans', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.28;
+letter-spacing: -0.02em;
+color: var(--white);
+background-color: var(--black);
+}
+
+/* Phone screen */
+.container {
+  min-width: 375px;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Desktop screen */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+/* Desktop screen 1440 */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+/**
+  |============================
+  | Section About Us
+  |============================
+*/
+
+.section-about {
+    margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 375px) {
+  .title-about {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.04em;
+
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .title-about {
+   font-size: 48px;
+   line-height: 1.12;
+
+   margin-bottom: 50px;
+  }
+}
+
+.acent-about-us {
+    color: var(--brown);
+  }
+
+@media only screen and (min-width: 375px) {
+  .img-about-us {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 40px;
+
+   width: 209px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .img-about-us {
+    margin-bottom: 50px;
+    width: 340px;
+    }
+}
+
+
+@media only screen and (min-width: 375px) {
+  .content-about-school {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+  }
+} 
+
+@media only screen and (min-width: 375px) {
+  .text-about-us {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.28;
+   letter-spacing: -0.02em;
+   margin: 0;
+   padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-about-us {
+  font-size: 16px;
+  line-height: 1.25;
+  }
+}
