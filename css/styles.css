@@ -73,6 +73,23 @@ background-color: var(--black);
 
 /**
   |============================
+  | Header
+  |============================
+*/
+
+.header-nav {}
+
+.header-box {}
+
+.header-logo {}
+
+.logo-company {}
+
+.header-list {}
+
+.header-button {}
+/**
+  |============================
   | Section About Us
   |============================
 */
