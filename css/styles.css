@@ -28,6 +28,41 @@ img {
 
 body {
 background-color: var(--black);
+color: var(--white);
+letter-spacing: -0.04em;
+
+font-family: 'DM Sans', sans-serif;
+font-style: normal;
+font-size: 16px;
+font-weight: 400;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Phone screen */
