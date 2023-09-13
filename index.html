@@ -51,7 +51,7 @@
     <main>
       <!-- Hero section -->
       <section class="hero-box">
-        <div class="container hero-container">
+        <div class="container">
           <h1 class="hero-title">
             Discover the magic of
             <span class="hero-title-acent">photography</span> in our school
@@ -111,6 +111,41 @@
                 <p class="hero-numbers">+1500</p>
               </div>
             </div>
+          </div>
+          <div>
+            <picture class="hero-img-bg">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/hero/Hero-bg-mandesk.png    1x,
+                  ./image/hero/Hero-bg-mandesk@2x.png 2x
+                "
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./image/hero/Hero-bg-mantab.png    1x,
+                  ./image/hero/Hero-bg-mantab@2x.png 2x
+                "
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./image/hero/Hero-bg-manmob.png    1x,
+                  ./image/hero/Hero-bg-manmob@2x.png 2x
+                "
+              />
+              <img
+                class="hero-students"
+                src="./image/hero/Hero-bg-manmob.png"
+                alt="A red-haired man with a camera in his hands"
+                width="259"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </section>

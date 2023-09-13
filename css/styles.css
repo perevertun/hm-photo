@@ -117,9 +117,11 @@ border-radius: 12px;
 border: 1px solid rgba(255, 255, 255, 0.20);
 background: var(--black);
 
+margin: 0 auto;
 
 width: 335px;
 height: 50px;
+margin-bottom: 20px;
 }
 
 .header-nav {
@@ -129,10 +131,8 @@ height: 50px;
 .header-box {}
 
 .header-logo {
-  display: flex;
- margin-left: 20px;
+ display: flex;
  margin-top: 17px;
- margin-bottom: 17px;
 }
 
 .logo-company {
@@ -165,39 +165,24 @@ fill: var(--white);
 @media only screen and (min-width: 375px) {
   .hero-box {
     width: 335px;
-    height: 777px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    
+    min-height: 777px;
+    margin: 0 auto 80px;
+    padding-top: 40px;
+    padding-bottom: 0;
+  
     border-radius: 30px;
     background-color: var(--dark-grey);
-    background-image: url(../image/hero/Hero-bg-manmob.png);
   }
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .section-hero-bg {
-    background-image: url(../image/hero/Hero-bg-manmob@2x.png);
-  }
-}
-
-.hero-container {
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 @media only screen and (min-width: 375px) {
   .hero-title {
-    margin-top: 40px;
-    margin-bottom: 20px;
     width: 295px;
 
     font-size: 40px;
     font-weight: 500;
     line-height: 1.1;
+    margin-bottom: 20px;
     }
 } 
 
@@ -229,7 +214,8 @@ fill: var(--white);
 .hero-items {
   display: flex;
   gap: 40px;
-}
+  margin-bottom: 31px;
+ }
 
 .hero-box-student {
   display: flex;
@@ -281,6 +267,10 @@ fill: var(--white);
 .hero-numbers {
   font-weight: 500;
   line-height: 1.12;
+}
+
+.hero-img-bg {
+
 }
 
 /**
